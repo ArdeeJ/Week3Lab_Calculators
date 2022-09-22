@@ -14,18 +14,16 @@
     <body>
         <h1>Arithmetic Calculator</h1>
         <form method="post" action="arithmetic">
-            
-        First: <input type="text" value="${first}">
-        <br>
-        Last: <input type="text" value="${last}">
-        <br>
-        <input type="submit" value="+">
-        <input type="submit" value="-">
-        <input type="submit" value="*">
-        <input type="submit" value="%">
-        <br>
-        Result: ${result}
-        <br>
+            First: <input type="number" name="first" value="${first}">
+            <br>
+            Last: <input type="number" name="last" value="${last}">
+            <br>
+            <input type="submit" value="+" name="symbols">
+            <input type="submit" value="-" name="symbols">
+            <input type="submit" value="*" name="symbols">
+            <input type="submit" value="%" name="symbols">
+        </form>
+        <br>Result: ${result}<br>
         <a href ="age"> Age Calculator</a> 
     </body>
 </html>
